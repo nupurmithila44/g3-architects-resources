@@ -122,6 +122,7 @@ main {
     border: 1px solid #FF900E;
     text-align: center;
     padding: 40px 30px;
+
 }
 
 .facts-card-container .card-title {
@@ -136,6 +137,21 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/* section sponspors */
+.sponspors{
+    text-align: center;
+}
+.sponspor-img-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.sponspor-img-container img{
+    width: 165.833px;
+height: 50px;
+
+}
 
 /* responsive media quaries */
 /* mobile devices */
@@ -145,19 +161,20 @@ main {
     }
 
     nav,
+    .facts-card-container
     .teams-container {
-        flex-direction: column;
+            flex-direction: column;
+        }
+
     }
 
-}
+    /* tablet or medium devices */
+    @media screen and (min-width:576px) and (max-width: 960px) {
+        header {
+            padding: 50px;
+        }
 
-/* tablet or medium devices */
-@media screen and (min-width:576px) and (max-width: 960px) {
-    header {
-        padding: 50px;
+        nav {
+            flex-direction: column;
+        }
     }
-
-    nav {
-        flex-direction: column;
-    }
-}
