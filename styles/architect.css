@@ -5,10 +5,20 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.btn-primary{
+    border-radius: 8px;
+    color: #fff;
+    background: #FF900E;
+    padding: 20px 25px;
+    font-size: 20px;
+    cursor:pointer;
+    border: 0;
+}
+
 /* header style */
 header{
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 140px;
+    padding: 50px 240px;
 }
 nav{
     display: flex;
@@ -32,4 +42,44 @@ nav li{
 nav li a{
     text-decoration: none;
     color:  #424242;
+}
+/* banner style */
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.banner-title{
+    color:#131313 ;
+    font-size: 60px;
+    font-weight: 700;
+}
+.banner-description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+/* responsive media quaries */
+/* mobile devices */
+@media screen and (max-width:576px){
+   header{
+    padding: 20px;
+  } 
+  nav{
+    flex-direction: column;
+  }
+}
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width: 960px){
+    header{
+        padding: 50px;
+      } 
+   nav{
+    flex-direction: column;
+   } 
 }
