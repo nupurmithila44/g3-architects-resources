@@ -1,116 +1,163 @@
 /* work sans font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
-*{
+* {
     font-family: 'Work Sans', sans-serif;
 }
 
-.btn-primary{
+.text-light-gray {
+    color: #727272;
+}
+
+.section-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.btn-primary {
     border-radius: 8px;
     color: #fff;
     background: #FF900E;
     padding: 20px 25px;
     font-size: 20px;
-    cursor:pointer;
+    cursor: pointer;
     border: 0;
 }
 
 /* header style */
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
- .nav-title{
-    color: #131313;
-    font-size: 45px;
-    font-weight: 700;
- }
-nav>ul{
+
+nav>ul {
     display: flex;
 }
-nav li{
+
+nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
-    color:  #424242;
+    color: #424242;
 }
+
 /* banner style */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 
 }
-.banner-title{
-    color:#131313 ;
+
+.banner-title {
+    color: #131313;
     font-size: 60px;
     font-weight: 700;
 }
-.banner-description{
-    color: #727272;
-    font-size: 16px;
-    font-weight: 400;
-}
-.banner img{
+
+.banner-description {}
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
-/* responsive media quaries */
-/* mobile devices */
-@media screen and (max-width:576px){
-   header{
-    padding: 20px;
-  } 
-  nav{
-    flex-direction: column;
-  }
-}
-/* tablet or medium devices */
-@media screen and (min-width:576px) and (max-width: 960px){
-    header{
-        padding: 50px;
-      } 
-   nav{
-    flex-direction: column;
-   } 
-}
 
 /* main style */
-main{
+main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: auto;
 }
-.teams-container{
+
+.teams-container {
     display: flex;
     align-items: center;
 }
-.teams-img-container{
+
+.teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.teams-content{
+
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
-    
+
 }
-.teams-title{
+
+.teams-title {
     font-size: 45px;
 }
-.teams-title .quick-list{
+
+.teams-title .quick-list {
     color: #727272;
     font-weight: 500;
 }
-.teams-title .teams-features{
+
+.teams-title .teams-features {
     color: #FF900E;
     font-weight: 700;
+}
+
+/* facts section */
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.facts-card-container .card-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.facts-card-container .card-stats {
+    font-size: 45px;
+    color: #424242;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* responsive media quaries */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    .teams-container {
+        flex-direction: column;
+    }
+
+}
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
 }
